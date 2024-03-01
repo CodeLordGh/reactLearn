@@ -1,15 +1,20 @@
+// Usefull imports for this accordian app
 import { useState } from "react";
 import classes from "./Accordian.module.css";
 import data from "./data.js";
 
 const Accordian = () => {
+  // Declaring state variables
   const [selected, setSelected] = useState(null);
   const [multiSected, setMultiSelected] = useState([]);
   const [multiSelection, setMultiSelection] = useState(false);
 
+  // function to handle single selection
   function handleClick(id) {
+    // Set the clicked question if not already
     setSelected(id === selected ? null : id);
   }
+  //function to handle multiple selection
   function handleMultiSelection(dataId) {
     let copyData = [...multiSected];
     let indexOfDataId = copyData.indexOf(dataId);
