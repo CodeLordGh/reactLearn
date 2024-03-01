@@ -29,7 +29,6 @@ const RandomColor = () => {
       style={{ width: "100vw", height: "100vh", backgroundColor: color }}
     >
       <h2>Random Color Generator</h2>
-      {/* <span>Click down</span> */}
       <h4
         className={classes.colorType}
         onClick={() => setColorType(!colorType)}
