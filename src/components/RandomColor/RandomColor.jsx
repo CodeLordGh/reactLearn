@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./RandomColor.module.css";
 const RandomColor = () => {
   const random = [1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
@@ -23,6 +23,9 @@ const RandomColor = () => {
     const rgb = `rgb(${r}, ${g}, ${b})`;
     setColor(rgb);
   };
+  useEffect(() => {
+    colorType === true ? handleRgb() : handleHex();
+  }, [colorType]);
   return (
     <div
       className={classes.container}
