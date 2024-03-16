@@ -14,6 +14,12 @@ not some components so that you can work with the component you want.
 
 [VSCode](https://code.visualstudio.com/)
 
+## Navigate to project
+
+```sh
+cd reactlearn
+```
+
 ## Project Setup
 
 ```sh
