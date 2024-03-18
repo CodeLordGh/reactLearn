@@ -17,7 +17,7 @@ not some components so that you can work with the component you want.
 ## Navigate to project
 
 ```sh
-cd reactlearn
+cd reactlearnd
 ```
 
 ## Project Setup
