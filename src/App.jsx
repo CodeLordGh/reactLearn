@@ -5,9 +5,9 @@ import StarRating from "./components/star-rating";
 const App = () => {
   return (
     <div>
-      {/* <Accordian />
-      <RandomColor /> */}
-      <StarRating NoOfStars={10} />
+      <Accordian />
+      {/* <RandomColor /> */}
+      {/* <StarRating NoOfStars={10} /> */}
     </div>
   );
 };
